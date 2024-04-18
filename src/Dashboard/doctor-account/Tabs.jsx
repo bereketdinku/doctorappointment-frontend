@@ -10,6 +10,7 @@ const Tabs = ({tab,setTab}) => {
         dispatch({ type: "LOGOUT" })
         navigate('/')
     }
+    const toggleMenu=()=>menuRef.current.classList.toggle('show_menu')
   return (
     <div>
         <span className='lg:hidden' onClick={toggleMenu}>

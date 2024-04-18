@@ -25,6 +25,7 @@ const Profile = ({doctorData}) => {
         experiences: [{ startingDate: '', endingDate: '', position: '', hospital: '' }],
         timeSlots: [{ day: '', endingDate: '', startingTime: '', endingTime: '' }]
     })
+    const toggleMenu=()=>menuRef.current.classList.toggle('show_menu')
     useEffect(()=>{
 setFormData({
     name: doctorData?.name,
